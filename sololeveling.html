@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solo Leveling - Aura Scans</title>
+    <link rel="icon" href="https://asuracomic.net/images/logo.webp">
+    <link rel="stylesheet" href="sololeveling.css">
+</head>
+<body>    
+    <nav class="navbar">
+        <div class="navbar-left">
+            <img src="https://asuracomic.net/images/logo.webp" alt="Asura Logo">
+            <a href="Home Page.html">Home</a>
+            <a href="comics.html">Comics</a>
+            <a href="bookmarks.html">Bookmarks</a>
+        </div>
+        <div class="navbar-right">
+            <form onsubmit="searchManhwa(event)" class="search-container">
+                <input type="text" class="search-box" id="searchInput" placeholder="Search...">
+                <button type="button" class="search-icon" onclick="redirectToSearch()"></button>
+            </form>
+            <a href="login page.html">
+                <button class="login-btn-navbar">Login</button>
+            </a>
+        </div>
+    </nav>
+    <div class="breadcrumb">
+        <h4>Aura Scans > Solo Leveling</h4>
+    </div>
+    
+    
+    <div class="container">
+        <div class="content">
+            <img src="https://gg.asuracomic.net/storage/media/256/conversions/01J3BAXFBTABT3VNAV3RPNZK7S-optimized.webp" alt=" Solo Leveling">
+            <div class="details">
+                <h2>Solo Leveling</h2>
+                <p><strong>Author:</strong> 추공 (Chugong)</p>
+                <p><strong>Artist:</strong> GEE So-Lyung, Redice Studio</p>
+                <p><strong>Status:</strong> Completed</p>
+                <p><strong>Updated On:</strong> March 25th, 2025</p>
+                <p><strong>Rating:</strong> 10 ⭐</p>
+                <div class="genres">
+                    <div class="genre"><button style="background-color:#333030;color:white ;box-shadow:none;  outline:none; border-radius: 3px; border-width:0px; height: 30px; width: 80px;">Action</button></div>
+                    <div class="genre"><button style="background-color:#333030;color:white ;box-shadow:none;  outline:none; border-radius: 3px; border-width:0px; height: 30px; width: 80px;">Adventure</button></div>
+                    <div class="genre"><button style="background-color:#333030;color:white ;box-shadow:none;  outline:none; border-radius: 3px; border-width:0px; height: 30px; width: 80px;">Fantasy</button></div>
+                    <div class="genre"><button style="background-color:#333030;color:white ;box-shadow:none;  outline:none; border-radius: 3px; border-width:0px; height: 30px; width: 80px;">Shounen</button></div>
+                </div>
+                <p>Synopsis: <br>10 years ago, after “the Gate” that connected the real world with the monster world opened, some of the ordinary, everyday people received the power to hunt monsters within the Gate. They are known as "Hunters". However, not all Hunters are powerful. My name is Sung Jin-Woo, an E-rank Hunter. I'm someone who has to risk his life in the lowliest of dungeons, the "World's Weakest". Having no skills whatsoever to display, I barely earned the required money by fighting in low-leveled dungeons… at least until I found a hidden dungeon with the hardest difficulty within the D-rank dungeons! In the end, as I was accepting death, I suddenly received a strange power, a quest log that only I could see, a secret to leveling up that only I know about! If I trained in accordance with my quests and hunted monsters, my level would rise. Changing from the weakest  Hunter to the strongest S-rank Hunter! </p>
+            </div>
+        </div>
+         <!-- Chapter List -->
+         <div class="chapter-box">
+            <h2>Chapters</h2>
+            <div class="chapter">Chapter 1 - March 24th 2025</div>
+            <div class="chapter">Chapter 2 - March 19th 2025</div>
+            <div class="chapter">Chapter 3 - March 4th 2025</div>
+            <div class="chapter">Chapter 4 - February 27th 2025</div>
+            <div class="chapter">Chapter 5 - February 17th 2025</div>
+            <div class="chapter">Chapter 6 - February 17th 2025</div>
+            <div class="chapter">Chapter 7 - February 17th 2025</div>
+            <div class="chapter">Chapter 8 - February 17th 2025</div>
+            <div class="chapter">Chapter 9 - February 17th 2025</div>
+            <div class="chapter">Chapter 10 - February 17th 2025</div>
+            <div class="chapter">Chapter 11 - February 17th 2025</div>
+            <div class="chapter">Chapter 12 - February 17th 2025</div>
+            <div class="chapter">Chapter 13- February 17th 2025</div>
+            <div class="chapter">Chapter 14 - February 17th 2025</div>
+            <div class="chapter">Chapter 15 - February 17th 2025</div>
+            <div class="chapter">Chapter 16 - February 17th 2025</div>
+            <div class="chapter">Chapter 17 - February 17th 2025</div>
+            <div class="chapter">Chapter 18 - February 17th 2025</div>
+            <div class="chapter">Chapter 19 - February 17th 2025</div>
+            <div class="chapter">Chapter 20 - February 17th 2025</div>
+            <div class="chapter">Chapter 21 - February 17th 2025</div>
+            <div class="chapter">Chapter 22 - February 17th 2025</div>
+            <div class="chapter">Chapter 23 - February 17th 2025</div>
+            <div class="chapter">Chapter 24 - February 17th 2025</div>
+            <div class="chapter">Chapter 25 - February 17th 2025</div>
+        </div>
+    </div>
+    </div>
+    <script>
+        function searchManhwa(event) {
+            event.preventDefault(); // Prevent form submission from refreshing the page
+            let searchQuery = document.querySelector(".search-box").value.trim().toLowerCase();
+            
+            // Mapping of search queries to page URLs
+            let manhwaPages = {
+                "murim login": "murimlogin.html",
+                "nano machine": "nanomachine.html",
+                "solo leveling": "sololeveling.html",
+                "mount hua sect": "mount-hua sect.html",
+                "absolute sword sense": "absolute sword sense.html",
+                "beginning after the end": "Beginning after the end.html"
+            };
+    
+            // Redirect if a match is found
+            if (manhwaPages[searchQuery]) {
+                window.location.href = manhwaPages[searchQuery];
+            } else {
+                alert("No results found.");
+            }
+        }
+    </script>
+    <div class="footer">
+        <p>Privacy Policy | About</p>
+    </div>
+</body>
+</html>

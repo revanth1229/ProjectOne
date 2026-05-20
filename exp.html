@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asura Scans</title>
+    <link rel="icon" href="https://asuracomic.net/images/logo.webp">
+    <style>
+        body{
+            font-style:oblique;
+            margin:0;
+            padding:0;
+            display: flex;
+            gap: 20px;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: left;
+            background-image: url("https://images.unsplash.com/photo-1588497859490-85d1c17db96d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+            background-repeat: no-repeat;
+            background-size:cover;
+            background-attachment: scroll;
+            background-repeat:repeat-y;
+        }
+        #f{
+            width:60%;
+            height: auto;
+            border: 10px white;
+            border-radius: 5%;
+            
+        }
+        #navbar{
+            width:100% ;
+            margin: auto;
+            display: flex;
+            background-color:rgb(113, 35, 161);
+            justify-content: space-around;
+            align-items: center;
+
+        }
+        #logo{
+            align-self: flex-start;
+            width: 5%;
+            margin: 10px;
+            display: flex;
+            justify-content: space-between;
+            color: white;
+        }
+        #form{
+            display: flex;
+            width:30%;
+            align-items: center;
+        }
+        #home{
+            width: 70%;
+            align-items: center;
+            color: white;
+        } 
+        #but{
+            color: white;
+            background-color: rgb(35, 27, 27);
+        }
+
+        #name{
+            color: white;
+            font-size:large;
+            text-align: left;
+        }
+        .panel{
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            
+        }
+        .mahnwa{
+            display: flex;
+            width: 30%;
+            height: 50%;
+            padding: 5%;
+            margin: auto;
+            border:40px black;
+            justify-content: space-between;
+            background-color: rgb(39, 29, 29);
+            border-radius: 30px;
+        }
+        .words{
+            text-align: left;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            margin: 30px;
+            width: 70%;
+            border: 10px black;
+            height: fit-content;
+            background-color: transparent;
+            gap: 20px;
+        }
+
+        #lu{
+            width: auto;
+            height: fit-content;
+            display: flex;
+            background-color:  rgb(39, 29, 29);;
+            border-radius: 5%;
+        }
+        #lptxt{
+            margin-left: 5px;
+            width: 80%;
+            font-size: medium;
+            color: white;
+            padding: 5px;
+        }
+        #view{
+            color: white;
+            background-color:rgb(113, 35, 161) ;
+        }
+        #footer{
+            width:100% ;
+            margin: auto;
+            display: flex;
+            background-color:rgb(113, 35, 161);
+            justify-content: space-around;
+            align-items: center;
+
+        }
+
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img  src="https://asuracomic.net/images/logo.webp" height="50px" width="50px">
+        </div>
+        <h1 id="home">Home</h1>
+        
+        <form id="form">
+            <div id="search">
+                <input  id ="but" type="text" placeholder="search....." name="search" >
+            <button  id=but type="submit">search</button>
+            <button id="but" type="submit " ><span>&#128273;</span>Login</button>
+           </form>
+    </nav>
+    <div class="container">
+        <nav id="lu">
+            <h1 id="lptxt">Latest Updates</h1>
+            
+            <form id="form">
+                <button id="view" type="submit ">view ALLL</button>
+               </form>
+        </nav>
+    <div class="panel">
+        <div class="mahnwa" id="murim">
+            <div class="image">
+               <a href="mahnwaPage.html">
+                <img  id=f src="https://gg.asuracomic.net/storage/media/273/conversions/01J3QWG0P2B1T5RX1RB9G9D3AY-optimized.webp" heigt="5px" weight="5px">
+               </a>
+            </div>
+            <div class="words">
+                <h1 id="name">Murim Login</h1>
+            </div>      
+        </div>
+            <div class="mahnwa" id="mounthua">
+                <div class="image">
+                    <img  id=f src="https://gg.asuracomic.net/storage/media/270399/conversions/01JKTBDEEZRNKTH6TRHPF5PCXM-optimized.webp" heigt="5px" weight="5px">
+                </div>
+                <div class="words">
+                    <h1 id="name">Nano Machine</h1>
+                </div>
+            </div>
+    </div>
+    <div class="panel">
+        <div class="mahnwa" id="murim">
+            <div class="image">
+                <img  id=f src="https://gg.asuracomic.net/storage/media/271/conversions/01J3QRQXHSBQVGA2KHKP2D3S3S-thumb-small.webp" heigt="5px" weight="5px">
+            </div>
+            <div class="words">
+                <h1 id="name">Solo Leveling</h1>
+            </div>
+        </div>
+        <div class="mahnwa" id="mounthua">
+            <div class="image">
+                <img  id=f src="https://gg.asuracomic.net/storage/media/54/conversions/fb9b38c7-thumb-small.webp" heigt="5px" weight="5px">
+            </div>
+            <div class="words">
+                <h1 id="name">Return of the Mount Hua Sect</h1>
+            </div>
+        </div>
+    </div>
+    <div class="panel">
+        <div class="mahnwa" id="murim">
+            <div class="image">
+                <img  id=f src="https://gg.asuracomic.net/storage/media/46/conversions/c20e9fb0-optimized.webp" heigt="5px" weight="5px">
+            </div>
+            <div class="words">
+                <h1 id="name">Absolute Sword Sense</h1>
+            </div>
+        </div>
+        <div class="mahnwa" id="mounthua">
+            <div class="image">
+                <img  id=f src="https://gg.asuracomic.net/storage/media/36/conversions/d86aab25-optimized.webp" heigt="5px" weight="5px">
+            </div>
+            <div class="words">
+                <h1 id="name">The Heavenly Demon Can't Live a Normal Life</h1>
+            </div>
+        </div>
+    </div>
+
+</div>
+    </div>
+    <footer id="footer" style="margin: 10px; padding:10px;">
+        <div id="logo">
+            <img  src="https://asuracomic.net/images/logo.webp" height="50px" width="50px">
+        </div>
+        <div>
+            privacy policy
+        </div>
+        <div>
+            About
+        </div>
+    </footer>
+    
+    
+</body>
+</html>

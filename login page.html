@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Aura Scans</title>
+    <link rel="icon" href="https://asuracomic.net/images/logo.webp">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo-container">
+            <img src="https://asuracomic.net/images/logo.webp" alt="Aura Scans" class="logo">
+            <h2>Aura Scans</h2>
+        </div>
+        <div class="nav-links">
+            <a href="Home Page.html">Home</a>
+            <a href="#">Bookmarks</a>
+            <a href="#">Comics</a>
+        </div>
+        <div class="search-login-container">
+            <input type="text" class="search-box" placeholder="Search...">
+            <button class="login-btn-navbar" onclick="window.location.href='Home Page.html';">Login</button>
+        </div>
+    </nav>
+
+    <!-- Login Box -->
+    <div class="login-container">
+        <img src="https://asuracomic.net/images/logo.webp" alt="Aura Scans" class="logo">
+        <h1>Aura Scans</h1>
+        <p style="color: #bbb; margin-bottom: 20px;">Login to your account</p>
+        <form action="Home Page.html" method="POST">
+            <div class="input-group">
+                <input type="text" name="email" placeholder="Enter your Email" required>
+                <i class="fas fa-envelope"></i>
+            </div>
+            <div class="input-group">
+                <input type="password" name="password" placeholder="Password" required>
+                <i class="fas fa-lock"></i>
+            </div>
+            <div class="remember-forgot">
+                <label><input type="checkbox"> Remember me</label>
+                <a href="#">Forgot Password?</a>
+            </div>
+            <button type="button" class="login-btn" onclick="window.location.href='Home Page.html';">Login</button>
+        </form>
+        <p class="or">Not a member? <a href="#" style="color: #8A2BE2; text-decoration: none;">Create New Account</a></p>
+        <button class="google-login">
+            <img src="google icon.jpg" width="18px"> Continue with Google
+        </button>
+        
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura Scans</title>
+    <link rel="icon" href="https://asuracomic.net/images/logo.webp">
+    <link rel="stylesheet" href="home.css">
+</head>
+<nav class="navbar">
+    <div class="navbar-left">
+        <img src="https://asuracomic.net/images/logo.webp" alt="Asura Logo">
+        <a href="Home Page.html">Home</a>
+        <a href="comics.html">Comics</a>
+        <a href="bookmarks.html">Bookmarks</a>
+    </div>
+    <div class="navbar-right">
+        
+            <form onsubmit="searchManhwa(event)" class="search-container">
+                <input type="text" class="search-box" id="searchInput" placeholder="Search...">
+                <button type="button" class="search-icon" onclick="redirectToSearch()"></button>
+            </form>
+            <a href="login page.html">
+                <button class="login-btn-navbar">Login</button>
+            </a>
+        
+        
+        
+        
+    </div>
+   
+   
+</nav>
+    <div class="container">
+        <div class="mahnwa">
+        <a href="murimlogin.html">
+            <img src="https://gg.asuracomic.net/storage/media/273/conversions/01J3QWG0P2B1T5RX1RB9G9D3AY-optimized.webp">
+        </a>
+            <h1>Murim Login</h1>
+        </div>
+        <div class="mahnwa">
+            <a href="nanomachine.html">
+                <img src="https://gg.asuracomic.net/storage/media/270399/conversions/01JKTBDEEZRNKTH6TRHPF5PCXM-optimized.webp">
+            </a>
+            <h1>Nano Machine</h1>
+        </div>
+        <div class="mahnwa">
+            <a href="sololeveling.html">
+            <img src="https://gg.asuracomic.net/storage/media/256/conversions/01J3BAXFBTABT3VNAV3RPNZK7S-optimized.webp">
+            </a>
+            <h1>Solo Leveling</h1>
+        </div>
+        <div class="mahnwa">
+            <a href="mount-hua sect.html">
+            <img src="https://gg.asuracomic.net/storage/media/54/conversions/fb9b38c7-thumb-small.webp">
+            </a>
+            <h1>Return of the Mount Hua Sect</h1>
+        </div>
+        <div class="mahnwa">
+            <a href="absolute sword sense.html">
+            <img src="https://gg.asuracomic.net/storage/media/46/conversions/c20e9fb0-optimized.webp">
+            </a>
+            <h1>Absolute Sword Sense</h1>
+        </div>
+        <div class="mahnwa">
+            <a href="Beginning after the end.html">
+            <img src="https://asurascans.com.lv/wp-content/uploads/2024/12/TBATE.webp">
+            </a>
+            <h1>Beginning after the end</h1>
+        </div>
+    </div>
+    <script>
+        function searchManhwa(event) {
+            event.preventDefault(); // Prevent form submission
+            let searchQuery = document.getElementById("searchInput").value.trim().toLowerCase();
+            
+            // Mapping of search queries to page URLs
+            let manhwaPages = {
+                "murim login": "murimlogin.html",
+                "nano machine": "nanomachine.html",
+                "solo leveling": "sololeveling.html",
+                "return of the mount hua sect": "mount-hua sect.html",
+                "absolute sword sense": "absolute sword sense.html",
+                "the heavenly demon can't live a normal life": "heavenly demon cant live a normal life.html"
+            };
+
+            // Redirect if the search query matches a manhwa title
+            if (manhwaPages[searchQuery]) {
+                window.location.href = manhwaPages[searchQuery];
+            } else {
+                alert("No results found.");
+            }
+        }
+    </script>
+    
+    <footer id="footer">
+        <p>Privacy Policy | About</p>
+    </footer>
+</body>
+</html>

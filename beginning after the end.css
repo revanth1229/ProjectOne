@@ -1,0 +1,236 @@
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color:rgb(33, 30, 30);
+            color: white;
+            font-family: Arial, sans-serif;
+            overflow-x: hidden;
+            overflow-y: scroll;
+
+        }
+        .container {
+           height: 1000px;
+           display: flex;
+           flex-direction: column; /* Fix stacking */
+           align-items: center;
+           margin-top: 20px;
+        }
+       
+       .content {
+           display: flex;
+           width: 80%;
+           background-color: black
+           
+       }
+       
+       .content img {
+           max-width: 250px; /* Ensure it doesn’t stretch */
+           height: auto;
+           border-radius: 10px;
+           margin-right: 20px;
+       }
+        .header {
+            background-color: #6a0dad;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .navbar {
+            width:100%;
+            display: flex;
+            align-items: center;
+            background-color: #6a0dad;
+            padding: 10px;
+            justify-content: space-between;
+        }
+        .breadcrumb {
+            
+            width: 100%;
+            background-color: #252525; /* Dark background */
+            color: white; /* Text color */
+            padding: 10px;
+            font-size: 15px;
+            text-align: left; /* Align text to the left */
+            border-bottom: 2px purple;/* Purple bottom border */
+}
+
+        .navbar-left {
+            display: flex;
+            align-items: center;
+        }
+        .navbar-left img {
+            height: 40px;
+            margin-right: 15px;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            margin-right: 15px;
+        }
+        .navbar-right {
+            display: flex;
+            align-items: center;
+        }
+        .search-container {
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+        
+        /* Search input field */
+        .search-box {
+            padding: 8px 15px;
+            padding-left: 35px; /* Space for the search icon */
+            border: none;
+            border-radius: 5px;
+            background: #2c2c2c;
+            color:white;
+            font-size: 14px;
+            width: 200px; /* Adjust width if needed */
+            outline: none;
+        }
+        
+        /* Clickable search icon (instead of pseudo-elements) */
+        .search-icon {
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            width: 20px;
+            height: 20px;
+            background: transparent;
+            border: 2px solid white; /* White border circle */
+            border-radius: 50%;
+            cursor: pointer;
+            transform: translateY(-50%);
+        }
+        
+        /* Handle of the magnifying glass */
+        .search-icon::after {
+            content: "";
+            width: 6px;
+            height: 2px;
+             /* White border handle */
+            position: absolute;
+            left: 10px;
+            top: 12px;
+            
+        }
+        
+            
+        
+        .login-btn-navbar {
+            width: 100%;
+            padding: 12px;
+            background: #6a0dad;;
+            color: white;
+            border:none;
+            border-radius:none;
+            cursor: pointer;
+            font-size: 15px;
+        
+        }
+        
+        .login-btn-navbar:hover {
+        background: #6A1B9A; 
+        }
+        
+        .container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            
+        }
+        .content {
+            display: flex;
+            width: 80%;
+            background-color: #252525;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .content img {
+            width: 250px;
+            border-radius: 10px;
+            margin-right: 20px;
+        }
+        .details {
+            flex-grow: 1;
+        }
+        .genres {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .genre {
+            border: 3px black;
+            padding: 5px 10px;
+            margin: 5px;
+            border-radius: 5px;
+        }
+         
+        
+         .chapter-box {
+            width: 81%; 
+            max-height: 300px; 
+            overflow-y: scroll; 
+            border: 2px solid #6a0dad;
+            margin-top: 20px; 
+            padding: 10px;
+            background-color: #252525; 
+            border-radius: 10px;
+        }
+
+
+        .chapter {
+            background-color: #1f1d1d;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+            cursor: pointer;
+            border-left: 4px solid#6a0dad;
+        }
+        .footer {
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #6a0dad; /* Highlighted */
+        }
+        .chapter-box::-webkit-scrollbar {
+            width: 8px; /* Adjust scrollbar width */
+        }
+        
+        .chapter-box::-webkit-scrollbar-track {
+            background: #252525; /* Background color of scrollbar track */
+            border-radius: 10px;
+        }
+        
+        .chapter-box::-webkit-scrollbar-thumb {
+            background: #6a0dad; /* Scrollbar thumb color */
+            border-radius: 10px;
+        }
+        
+        .chapter-box::-webkit-scrollbar-thumb:hover {
+            background: #8a2be2; /* Color change on hover */
+        }
+        
+        ::-webkit-scrollbar {
+            width: 15px; /* Adjust scrollbar width */
+        }
+        
+        ::-webkit-scrollbar-track {
+            background:  #252525; /* Ash background */
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: rgb(47, 49, 47);/* Black scrollbar thumb */
+            border-radius: 10px;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+            background: #333333; 
+        }
+        
+        
